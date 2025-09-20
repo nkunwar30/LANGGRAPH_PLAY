@@ -1,0 +1,27 @@
+[project]
+name = "langgraph-play"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langgraph (>=0.6.7,<0.7.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-openai (>=0.3.32,<0.4.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain-tavily (>=0.2.11,<0.3.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "langgraph_play", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
