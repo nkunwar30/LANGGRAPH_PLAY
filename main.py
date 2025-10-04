@@ -14,7 +14,7 @@ LAST = -1
 
 def should_continue(state: MessagesState) -> str:
     """Decide whether to continue or end the flow."""
-    if not state["messages"][LAST].tool_calls:
+    if not state.messages[LAST].tool_calls:
         return END_NODE
     return ACT
 
